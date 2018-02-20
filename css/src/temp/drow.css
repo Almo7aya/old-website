@@ -1,0 +1,91 @@
+/* drow aside styles
+====================================*/
+aside.drow {
+  height: 100%;
+  width: 350px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fbfbfb;
+  border-right: 1px solid #dadada;
+  display: flex;
+  flex-direction: column; }
+  aside.drow div.brand {
+    flex: 1 1 25%;
+    display: flex;
+    justify-content: center; }
+    aside.drow div.brand svg {
+      align-self: flex-end; }
+  aside.drow nav.Y {
+    flex: 1 1 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    aside.drow nav.Y ul {
+      padding: 0;
+      list-style: 0;
+      margin: 0; }
+      aside.drow nav.Y ul li {
+        text-transform: uppercase;
+        padding: 20px 0;
+        background-color: #f7f7f7;
+        border-bottom: 1px solid #c1c1c1;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer; }
+        aside.drow nav.Y ul li:hover {
+          background-color: #d2d2d2; }
+        aside.drow nav.Y ul li svg {
+          align-self: center; }
+  aside.drow div.soctial {
+    flex: 1 1 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    aside.drow div.soctial span.item-facebook, aside.drow div.soctial a {
+      background-color: #3b5998;
+      display: block;
+      flex: 0 0 15%;
+      align-self: flex-start;
+      border-radius: 50%;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      color: #fff; }
+    aside.drow div.soctial span.item-twitter, aside.drow div.soctial a {
+      background-color: #55acee;
+      display: block;
+      flex: 0 0 15%;
+      align-self: flex-start;
+      border-radius: 50%;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      color: #fff; }
+    aside.drow div.soctial span.item-github, aside.drow div.soctial a {
+      background-color: #7d7d7d;
+      display: block;
+      flex: 0 0 15%;
+      align-self: flex-start;
+      border-radius: 50%;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      color: #fff; }
+    aside.drow div.soctial span.item-codepen, aside.drow div.soctial a {
+      background-color: #444;
+      display: block;
+      flex: 0 0 15%;
+      align-self: flex-start;
+      border-radius: 50%;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      color: #fff; }
+
+/* place holder */
+aside.drow nav.Y ul li {
+  transition: all .6s; }
+
+/*# sourceMappingURL=drow.css.map */

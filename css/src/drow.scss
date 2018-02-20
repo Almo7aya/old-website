@@ -1,0 +1,122 @@
+/* drow aside styles
+====================================*/
+
+aside.drow {
+
+    height: 100%;
+    width: 350px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: #fbfbfb;
+    border-right: 1px solid #dadada;
+
+    display: flex;
+
+    flex-direction: column;
+
+    
+    div.brand {
+
+        flex: 1 1 25%;
+        
+        display: flex;
+
+        justify-content: center;
+
+
+        svg {
+
+            align-self: flex-end;
+            
+        }
+
+    }
+
+    nav.Y {
+
+        flex: 1 1 65%;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+
+        ul {
+            padding: 0;
+            list-style: 0;
+            margin: 0;
+
+            li {
+                text-transform: uppercase;
+                padding: 20px 0;
+
+                background-color: #f7f7f7;
+                border-bottom: 1px solid #c1c1c1;
+
+                display: flex;
+
+                justify-content: center;
+                align-content: center;
+
+                @extend %trans;
+
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #d2d2d2;
+                }
+
+                svg {
+                    align-self: center;
+                }
+
+            }
+        }
+    }
+
+    div.soctial {
+
+        flex: 1 1 10%;
+
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        $items: ( facebook : #3b5998, twitter: #55acee, github: #7d7d7d, codepen: #444 );
+        @each $name , $color in $items {
+            
+            span.item-#{$name}, a {
+
+                background-color: $color;
+
+                display: block;
+                
+                flex: 0 0 15%;
+                align-self: flex-start;
+
+                border-radius: 50%;
+                height: 50px;
+
+                text-align: center;
+                line-height: 50px;
+
+                color: #fff;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+/* place holder */
+
+%trans {
+    transition: all .6s;
+}
